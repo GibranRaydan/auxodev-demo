@@ -8,10 +8,10 @@ from flights.models import Itinerary, Leg
 class LegModelSerializer(serializers.ModelSerializer):
     """ Leg model serializers """
     arrival_airport = serializers.SlugRelatedField(
-        many = False, read_only = True, slug_field='name'
+        many = False, read_only = True, slug_field='code'
     )
     departure_airport = serializers.SlugRelatedField(
-        many = False, read_only = True, slug_field='name'
+        many = False, read_only = True, slug_field='code'
     )
     airline_name = serializers.StringRelatedField(many=False,read_only=True, source = 'airline')
     airline_id = serializers.PrimaryKeyRelatedField(many=False, read_only=True, source = 'airline')

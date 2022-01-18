@@ -11,9 +11,17 @@ class Airport(models.Model):
     name = models.CharField(
         max_length=30,
         null=False,
+        unique=False,
+        error_messages={
+            'required': build_error_message(REQUIRED),
+        }
+    )
+    code = models.CharField(
+        max_length=3,
+        null=False,
         unique=True,
         error_messages={
-            'required': build_error_message(EXIST),
+            'required': build_error_message(REQUIRED),
             'unique': build_error_message(UNIQUE)
         }
     )
