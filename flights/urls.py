@@ -1,11 +1,13 @@
 """ Users URLs. """
 
 # Django
-from django.urls import path
+# from django.urls import path
+from django.conf.urls import url
 
 # Views
 from flights.views import ItinerariesAPIView
 
 urlpatterns = [
-    path('flights/itineraries/', ItinerariesAPIView.as_view(), name='itineraries_view'),
+    url('flights/itineraries/', ItinerariesAPIView.as_view(), name='itineraries_view'),
 ]
+

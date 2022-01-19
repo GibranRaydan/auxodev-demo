@@ -23,6 +23,14 @@ class Leg(models.Model):
 
     def __str__(self):
         """ Return leg """
-        return str(self.airline.name)
+        leg_information = self.airline.name + ' : ' + self.departure_airport.name + '->' + self.arrival_airport.name
+        return str(leg_information)
+
+    def get_itinerary(self):
+        try:
+            itinerary = Itinerary.objects.get(id=self.itinerary,)
+            return itinerary
+        except:
+            return None
 
     REQUIRED_FIELDS = ['departure_airport','arrival_airport','airline','departure_time','arrival_time','duration']

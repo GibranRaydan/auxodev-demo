@@ -15,11 +15,9 @@ class LegModelSerializer(serializers.ModelSerializer):
     )
     airline_name = serializers.StringRelatedField(many=False,read_only=True, source = 'airline')
     airline_id = serializers.PrimaryKeyRelatedField(many=False, read_only=True, source = 'airline')
-
-
     class Meta:
         model = Leg
-        fields = ('id','stops','duration','arrival_airport','departure_airport','airline_id','airline_name')
+        fields = ('id','stops','duration','arrival_airport','departure_airport','airline_id','airline_name','departure_time','arrival_time')
 
 
 class ItineraryModelSerializer(serializers.ModelSerializer):
