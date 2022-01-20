@@ -25,4 +25,4 @@ _Just Run pytest like:_
 pytest
 ```
 
-⌨️ with ❤️ por [GibranRaydan](https://github.com/GibranRaydan) 😊
+⌨️ with ❤️ by [GibranRaydan](https://github.com/GibranRaydan) 😊
