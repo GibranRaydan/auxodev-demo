@@ -1,0 +1,18 @@
+[
+  {
+    "model": "flights.agent",
+    "pk": 1,
+    "fields": {
+      "name": "Margarita",
+      "airline": 1
+    }
+  },
+  {
+    "model": "flights.agent",
+    "pk": 2,
+    "fields": {
+      "name": "Bogota",
+      "airline": 2
+    }
+  }
+]

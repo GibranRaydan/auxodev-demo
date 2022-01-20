@@ -1,0 +1,16 @@
+[
+  {
+    "model": "flights.airline",
+    "pk": 1,
+    "fields": {
+      "name": "Avianca"
+    }
+  },
+  {
+    "model": "flights.airline",
+    "pk": 2,
+    "fields": {
+      "name": "Laser"
+    }
+  }
+]

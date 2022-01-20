@@ -1,0 +1,18 @@
+[
+  {
+    "model": "flights.airport",
+    "pk": 1,
+    "fields": {
+      "name": "Margarita",
+      "code": "MGT"
+    }
+  },
+  {
+    "model": "flights.airport",
+    "pk": 2,
+    "fields": {
+      "name": "Bogota",
+      "code": "BGT"
+    }
+  }
+]

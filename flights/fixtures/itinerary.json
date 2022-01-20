@@ -1,0 +1,29 @@
+[
+  {
+    "model": "flights.itinerary",
+    "pk": 1,
+    "fields": {
+      "price": 10000,
+      "agent": 1,
+      "agent_rating": 9.1
+    }
+  },
+  {
+    "model": "flights.itinerary",
+    "pk": 2,
+    "fields": {
+      "price": 10000,
+      "agent": 2,
+      "agent_rating":7.1
+    }
+  },
+  {
+    "model": "flights.itinerary",
+    "pk": 3,
+    "fields": {
+      "price": 10000,
+      "agent": 1,
+      "agent_rating":7.1
+    }
+  }
+]
